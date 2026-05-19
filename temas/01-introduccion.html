@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 01 - Introducción a las Estructuras de Datos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tema 01: Introducción a las Estructuras de Datos</h1>
+        <p class="subtitle">Conceptos Fundamentales de Organización de Memoria</p>
+    </header>
+
+    <main class="container">
+        
+        <a href="../index.html" class="btn-regresar">&larr; Volver al Índice General</a>
+
+        <section class="block-tema">
+            <h3>1. Documentación Científica</h3>
+            <p><strong>Definición:</strong> Una estructura de datos es una forma sistemática y especializada de organizar, almacenar y manipular datos en la memoria de una computadora, de tal manera que puedan ser utilizados de forma eficiente según las necesidades del algoritmo.</p>
+            <br>
+            <p><strong>Utilidad:</strong> El uso de una estructura adecuada optimiza los recursos de hardware, reduciendo drásticamente el consumo de memoria RAM y minimizando el tiempo de ejecución (procesamiento) de cualquier software.</p>
+            <br>
+            <p><strong>Características clave:</strong></p>
+            <ul>
+                <li><strong>Abstracción:</strong> Enfocadas en el "qué hace" la estructura antes del "cómo lo hace" internamente.</li>
+                <li><strong>Lineales vs No Lineales:</strong> Los datos pueden organizarse de forma secuencial consecutiva (como arreglos y listas) o mediante relaciones jerárquicas complejas (como árboles y grafos).</li>
+                <li><strong>Dinámicas vs Estáticas:</strong> Capacidad de alterar su tamaño en memoria en tiempo de ejecución.</li>
+            </ul>
+            <br>
+            <p><strong>Casos de Uso reales:</strong> El sistema de archivos de un sistema operativo (organizado en árboles), el historial de navegación de un navegador web o la cola de impresión de una oficina.</p>
+        </section>
+
+        <section class="block-tema">
+            <h3>2. Ejemplos Conceptuales Solucionados</h3>
+            
+            <h4>Ejemplo 1: Estructura de un Tipo de Dato Abstracto (TDA)</h4>
+            <p>Modelado básico en Java de una entidad u objeto contenedor que sirve como base conceptual para estructurar información compleja:</p>
+<pre>
+public class Estudiante {
+    String nombre;
+    int codigo;
+    double notaFinal;
+
+    // Constructor que define la estructura del dato en memoria
+    public Estudiante(String nombre, int codigo, double notaFinal) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+        this.notaFinal = notaFinal;
+    }
+}
+</pre>
+
+            <h4>Ejemplo 2: Intercambio de variables temporales</h4>
+            <p>Lógica elemental algorítmica para reorganizar datos básicos usando una variable auxiliar en memoria:</p>
+<pre>
+int variableA = 50;
+int variableB = 100;
+
+// Proceso de intercambio (Swap)
+int auxiliar = variableA;
+variableA = variableB;
+variableB = auxiliar;
+
+System.out.println("Variable A final: " + variableA); // Imprime 100
+</pre>
+        </section>
+
+        <section class="block-tema">
+            <h3>3. Retos Técnicos Propuestos (Sin Solución)</h3>
+            <p><strong>Reto Técnico 1:</strong> Diseñar un modelo conceptual o clase en Java que represente la estructura de un Producto de inventario tecnológico, definiendo campos restrictivos para código de barras, stock mínimo y precio de venta.</p>
+            <br>
+            <p><strong>Reto Técnico 2:</strong> Explicar mediante un diagrama conceptual manuscrito o escrito textual la diferencia lógica de almacenamiento en memoria RAM entre una variable primitiva simple (ej. un `int`) y un Objeto instanciado de una clase.</p>
+        </section>
+
+        <section class="block-tema">
+            <h3>4. Material de Soporte Audiovisual</h3>
+            <p>Haz clic en el botón inferior para visualizar la introducción formal a la arquitectura de asignación de memoria:</p>
+            <a href="#" target="_blank" class="video-link">Reproducir Clip Explicativo</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto Final - Estructura de Datos &copy; 2026</p>
+    </footer>
+
+</body>
+</html>

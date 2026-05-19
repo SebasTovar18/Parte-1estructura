@@ -1,0 +1,353 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Tablas Hash</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Tema 07: Tablas Hash
+</h1>
+
+<p>
+Estructuras de Datos de Acceso Rápido
+</p>
+
+</header>
+
+<nav>
+
+<a href="../index.html">
+← Volver al Índice General
+</a>
+
+</nav>
+
+<main>
+
+<section>
+
+<h2>
+1. Documentación Científica
+</h2>
+
+<h3>Definición</h3>
+
+<p>
+Una Tabla Hash es una estructura
+de datos que almacena información
+mediante pares clave-valor,
+utilizando una función hash
+para acceder rápidamente a los datos.
+</p>
+
+<h3>Utilidad</h3>
+
+<p>
+Permite realizar búsquedas,
+inserciones y eliminaciones
+de forma muy rápida,
+mejorando el rendimiento
+de aplicaciones y sistemas.
+</p>
+
+<h3>Características Clave</h3>
+
+<ul>
+
+<li>Acceso rápido a datos.</li>
+
+<li>Uso de claves únicas.</li>
+
+<li>Almacenamiento clave-valor.</li>
+
+<li>Alta eficiencia de búsqueda.</li>
+
+<li>Manejo de colisiones.</li>
+
+</ul>
+
+<h3>Casos de Uso</h3>
+
+<p>
+Bases de datos,
+sistemas de usuarios,
+diccionarios,
+caché web
+y autenticación de cuentas.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+2. Ejemplos Prácticos Solucionados
+</h2>
+
+<h3>Ejemplo 1: Crear HashMap</h3>
+
+<pre>
+HashMap<Integer, String> tabla =
+new HashMap<>();
+</pre>
+
+<p>
+Creación básica de tabla hash.
+</p>
+
+<hr>
+
+<h3>Ejemplo 2: Insertar datos</h3>
+
+<pre>
+tabla.put(1, "Juan");
+</pre>
+
+<p>
+Agregar clave y valor.
+</p>
+
+<hr>
+
+<h3>Ejemplo 3: Insertar varios</h3>
+
+<pre>
+tabla.put(2, "Ana");
+tabla.put(3, "Luis");
+</pre>
+
+<p>
+Inserción múltiple.
+</p>
+
+<hr>
+
+<h3>Ejemplo 4: Mostrar datos</h3>
+
+<pre>
+System.out.println(tabla);
+</pre>
+
+<p>
+Visualización completa.
+</p>
+
+<hr>
+
+<h3>Ejemplo 5: Buscar dato</h3>
+
+<pre>
+tabla.get(1);
+</pre>
+
+<p>
+Obtener valor por clave.
+</p>
+
+<hr>
+
+<h3>Ejemplo 6: Eliminar dato</h3>
+
+<pre>
+tabla.remove(2);
+</pre>
+
+<p>
+Eliminar elemento.
+</p>
+
+<hr>
+
+<h3>Ejemplo 7: Verificar clave</h3>
+
+<pre>
+tabla.containsKey(1);
+</pre>
+
+<p>
+Comprobar existencia.
+</p>
+
+<hr>
+
+<h3>Ejemplo 8: Tamaño</h3>
+
+<pre>
+tabla.size();
+</pre>
+
+<p>
+Cantidad de elementos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 9: Limpiar tabla</h3>
+
+<pre>
+tabla.clear();
+</pre>
+
+<p>
+Eliminar todos los datos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 10: Tabla de edades</h3>
+
+<pre>
+HashMap<String, Integer> edades =
+new HashMap<>();
+</pre>
+
+<p>
+HashMap con nombres y edades.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+3. Retos Técnicos Propuestos
+</h2>
+
+<h3>Reto 1</h3>
+
+<p>
+Crear una tabla hash
+con 5 estudiantes.
+</p>
+
+<hr>
+
+<h3>Reto 2</h3>
+
+<p>
+Buscar un usuario
+por su ID.
+</p>
+
+<hr>
+
+<h3>Reto 3</h3>
+
+<p>
+Eliminar un dato
+de la tabla hash.
+</p>
+
+<hr>
+
+<h3>Reto 4</h3>
+
+<p>
+Mostrar todos los datos
+almacenados.
+</p>
+
+<hr>
+
+<h3>Reto 5</h3>
+
+<p>
+Contar los elementos
+de la tabla.
+</p>
+
+<hr>
+
+<h3>Reto 6</h3>
+
+<p>
+Verificar si una clave
+existe.
+</p>
+
+<hr>
+
+<h3>Reto 7</h3>
+
+<p>
+Crear una tabla
+de productos y precios.
+</p>
+
+<hr>
+
+<h3>Reto 8</h3>
+
+<p>
+Eliminar todos los datos
+de la tabla.
+</p>
+
+<hr>
+
+<h3>Reto 9</h3>
+
+<p>
+Crear una tabla hash
+de correos electrónicos.
+</p>
+
+<hr>
+
+<h3>Reto 10</h3>
+
+<p>
+Mostrar únicamente
+las claves almacenadas.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+4. Material de Soporte Audiovisual
+</h2>
+
+<p>
+Haz clic para visualizar
+la explicación detallada
+sobre tablas hash
+y acceso rápido a datos.
+</p>
+
+<a href="#">
+Ver Video Explicativo
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Proyecto Final — Estructura de Datos
+</p>
+
+</footer>
+
+</body>
+</html>
+```
+

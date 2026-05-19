@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Árboles Binarios de Búsqueda - BST</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Tema 09: Árboles Binarios de Búsqueda — BST
+</h1>
+
+<p>
+Estructuras de Datos Jerárquicas Ordenadas
+</p>
+
+</header>
+
+<nav>
+
+<a href="../index.html">
+← Volver al Índice General
+</a>
+
+</nav>
+
+<main>
+
+<section>
+
+<h2>
+1. Documentación Científica
+</h2>
+
+<h3>Definición</h3>
+
+<p>
+Un Árbol Binario de Búsqueda (BST)
+es una estructura jerárquica
+donde los valores menores
+se almacenan a la izquierda
+y los mayores a la derecha.
+</p>
+
+<h3>Utilidad</h3>
+
+<p>
+Permite realizar búsquedas,
+inserciones y eliminaciones
+de manera eficiente
+manteniendo los datos ordenados.
+</p>
+
+<h3>Características Clave</h3>
+
+<ul>
+
+<li>Organización jerárquica.</li>
+
+<li>Datos ordenados automáticamente.</li>
+
+<li>Búsquedas rápidas.</li>
+
+<li>Máximo dos hijos por nodo.</li>
+
+<li>Recorridos ordenados.</li>
+
+</ul>
+
+<h3>Casos de Uso</h3>
+
+<p>
+Bases de datos,
+sistemas de búsqueda,
+gestión de información,
+índices
+y procesamiento de datos.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+2. Ejemplos Prácticos Solucionados
+</h2>
+
+<h3>Ejemplo 1: Crear nodo BST</h3>
+
+<pre>
+class Nodo{
+
+    int dato;
+
+    Nodo izquierda;
+    Nodo derecha;
+}
+</pre>
+
+<p>
+Nodo básico BST.
+</p>
+
+<hr>
+
+<h3>Ejemplo 2: Crear raíz</h3>
+
+<pre>
+Nodo raiz = new Nodo();
+
+raiz.dato = 50;
+</pre>
+
+<p>
+Creación del nodo principal.
+</p>
+
+<hr>
+
+<h3>Ejemplo 3: Insertar menor</h3>
+
+<pre>
+raiz.izquierda = new Nodo();
+
+raiz.izquierda.dato = 30;
+</pre>
+
+<p>
+Valor menor a la izquierda.
+</p>
+
+<hr>
+
+<h3>Ejemplo 4: Insertar mayor</h3>
+
+<pre>
+raiz.derecha = new Nodo();
+
+raiz.derecha.dato = 80;
+</pre>
+
+<p>
+Valor mayor a la derecha.
+</p>
+
+<hr>
+
+<h3>Ejemplo 5: Mostrar raíz</h3>
+
+<pre>
+System.out.println(
+raiz.dato
+);
+</pre>
+
+<p>
+Mostrar nodo principal.
+</p>
+
+<hr>
+
+<h3>Ejemplo 6: Mostrar izquierda</h3>
+
+<pre>
+System.out.println(
+raiz.izquierda.dato
+);
+</pre>
+
+<p>
+Mostrar hijo izquierdo.
+</p>
+
+<hr>
+
+<h3>Ejemplo 7: Mostrar derecha</h3>
+
+<pre>
+System.out.println(
+raiz.derecha.dato
+);
+</pre>
+
+<p>
+Mostrar hijo derecho.
+</p>
+
+<hr>
+
+<h3>Ejemplo 8: Comparar valores</h3>
+
+<pre>
+if(20 < 50){
+
+    System.out.println(
+    "Va a la izquierda"
+    );
+}
+</pre>
+
+<p>
+Regla BST.
+</p>
+
+<hr>
+
+<h3>Ejemplo 9: Insertar nuevo nodo</h3>
+
+<pre>
+Nodo nuevo = new Nodo();
+</pre>
+
+<p>
+Creación de nodo adicional.
+</p>
+
+<hr>
+
+<h3>Ejemplo 10: Recorrido básico</h3>
+
+<pre>
+System.out.println(
+"Recorrido BST"
+);
+</pre>
+
+<p>
+Inicio de recorrido.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+3. Retos Técnicos Propuestos
+</h2>
+
+<h3>Reto 1</h3>
+
+<p>
+Crear un BST
+con 5 números.
+</p>
+
+<hr>
+
+<h3>Reto 2</h3>
+
+<p>
+Insertar un valor menor
+a la izquierda.
+</p>
+
+<hr>
+
+<h3>Reto 3</h3>
+
+<p>
+Insertar un valor mayor
+a la derecha.
+</p>
+
+<hr>
+
+<h3>Reto 4</h3>
+
+<p>
+Mostrar el nodo raíz.
+</p>
+
+<hr>
+
+<h3>Reto 5</h3>
+
+<p>
+Buscar un número
+dentro del árbol.
+</p>
+
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Proyecto Final — Estructura de Datos
+</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+```html id="p4w8n1"
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Árboles Binarios</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Tema 08: Árboles Binarios
+</h1>
+
+<p>
+Estructuras de Datos Jerárquicas
+</p>
+
+</header>
+
+<nav>
+
+<a href="../index.html">
+← Volver al Índice General
+</a>
+
+</nav>
+
+<main>
+
+<section>
+
+<h2>
+1. Documentación Científica
+</h2>
+
+<h3>Definición</h3>
+
+<p>
+Un árbol binario es una estructura
+de datos jerárquica compuesta
+por nodos conectados,
+donde cada nodo puede tener
+máximo dos hijos:
+izquierdo y derecho.
+</p>
+
+<h3>Utilidad</h3>
+
+<p>
+Permite organizar información
+de manera jerárquica,
+facilitando búsquedas,
+recorridos y clasificación de datos.
+</p>
+
+<h3>Características Clave</h3>
+
+<ul>
+
+<li>Estructura jerárquica.</li>
+
+<li>Cada nodo tiene hasta 2 hijos.</li>
+
+<li>Existe un nodo raíz.</li>
+
+<li>Permite recorridos ordenados.</li>
+
+<li>Facilita búsquedas eficientes.</li>
+
+</ul>
+
+<h3>Casos de Uso</h3>
+
+<p>
+Sistemas de archivos,
+bases de datos,
+compiladores,
+motores de búsqueda
+y representación jerárquica.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+2. Ejemplos Prácticos Solucionados
+</h2>
+
+<h3>Ejemplo 1: Crear nodo</h3>
+
+<pre>
+class Nodo{
+
+    int dato;
+
+    Nodo izquierda;
+    Nodo derecha;
+}
+</pre>
+
+<p>
+Nodo básico de árbol binario.
+</p>
+
+<hr>
+
+<h3>Ejemplo 2: Crear raíz</h3>
+
+<pre>
+Nodo raiz = new Nodo();
+
+raiz.dato = 10;
+</pre>
+
+<p>
+Creación del nodo raíz.
+</p>
+
+<hr>
+
+<h3>Ejemplo 3: Agregar hijo izquierdo</h3>
+
+<pre>
+raiz.izquierda = new Nodo();
+</pre>
+
+<p>
+Inserción de hijo izquierdo.
+</p>
+
+<hr>
+
+<h3>Ejemplo 4: Agregar hijo derecho</h3>
+
+<pre>
+raiz.derecha = new Nodo();
+</pre>
+
+<p>
+Inserción de hijo derecho.
+</p>
+
+<hr>
+
+<h3>Ejemplo 5: Asignar valores</h3>
+
+<pre>
+raiz.izquierda.dato = 5;
+
+raiz.derecha.dato = 20;
+</pre>
+
+<p>
+Asignación de datos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 6: Mostrar raíz</h3>
+
+<pre>
+System.out.println(
+raiz.dato
+);
+</pre>
+
+<p>
+Visualización del nodo principal.
+</p>
+
+<hr>
+
+<h3>Ejemplo 7: Mostrar hijo izquierdo</h3>
+
+<pre>
+System.out.println(
+raiz.izquierda.dato
+);
+</pre>
+
+<p>
+Acceso al hijo izquierdo.
+</p>
+
+<hr>
+
+<h3>Ejemplo 8: Mostrar hijo derecho</h3>
+
+<pre>
+System.out.println(
+raiz.derecha.dato
+);
+</pre>
+
+<p>
+Acceso al hijo derecho.
+</p>
+
+<hr>
+
+<h3>Ejemplo 9: Recorrido simple</h3>
+
+<pre>
+System.out.println("Recorrido");
+</pre>
+
+<p>
+Inicio de recorrido.
+</p>
+
+<hr>
+
+<h3>Ejemplo 10: Crear árbol pequeño</h3>
+
+<pre>
+Nodo arbol = new Nodo();
+</pre>
+
+<p>
+Inicialización de árbol binario.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+3. Retos Técnicos Propuestos
+</h2>
+
+<h3>Reto 1</h3>
+
+<p>
+Crear un árbol binario
+con 3 nodos.
+</p>
+
+<hr>
+
+<h3>Reto 2</h3>
+
+<p>
+Mostrar el nodo raíz.
+</p>
+
+<hr>
+
+<h3>Reto 3</h3>
+
+<p>
+Agregar un hijo izquierdo.
+</p>
+
+<hr>
+
+<h3>Reto 4</h3>
+
+<p>
+Agregar un hijo derecho.
+</p>
+
+<hr>
+
+<h3>Reto 5</h3>
+
+<p>
+Mostrar todos los nodos.
+</p>
+
+<hr>
+
+<h3>Reto 6</h3>
+
+<p>
+Crear un árbol
+con números enteros.
+</p>
+
+<hr>
+
+<h3>Reto 7</h3>
+
+<p>
+Mostrar únicamente
+los hijos izquierdos.
+</p>
+
+<hr>
+
+<h3>Reto 8</h3>
+
+<p>
+Contar la cantidad
+de nodos.
+</p>
+
+<hr>
+
+<h3>Reto 9</h3>
+
+<p>
+Crear un árbol
+de nombres.
+</p>
+
+<hr>
+
+<h3>Reto 10</h3>
+
+<p>
+Recorrer el árbol
+de izquierda a derecha.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+4. Material de Soporte Audiovisual
+</h2>
+
+<p>
+Haz clic para visualizar
+la explicación detallada
+sobre árboles binarios
+y estructuras jerárquicas.
+</p>
+
+<a href="#">
+Ver Video Explicativo
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Proyecto Final — Estructura de Datos
+</p>
+
+</footer>
+
+</body>
+</html>
+```
+

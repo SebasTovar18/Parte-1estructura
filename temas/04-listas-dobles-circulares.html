@@ -1,0 +1,320 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Listas Dobles y Circulares</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Tema 04: Listas Dobles y Circulares
+</h1>
+
+<p>
+Estructuras de Datos Dinámicas Bidireccionales y Cíclicas
+</p>
+
+</header>
+
+<nav>
+
+<a href="../index.html">
+← Volver al Índice General
+</a>
+
+</nav>
+
+<main>
+
+<section>
+
+<h2>
+1. Documentación Científica
+</h2>
+
+<h3>Definición</h3>
+
+<p>
+Las listas dobles y circulares son estructuras
+de datos dinámicas formadas por nodos enlazados.
+Las listas dobles permiten recorrer datos
+hacia adelante y hacia atrás,
+mientras que las listas circulares
+conectan el último nodo con el primero.
+</p>
+
+<h3>Utilidad</h3>
+
+<p>
+Permiten gestionar información dinámica
+de forma eficiente,
+facilitando recorridos continuos,
+inserciones y eliminaciones.
+</p>
+
+<h3>Características Clave</h3>
+
+<ul>
+
+<li>Memoria dinámica.</li>
+
+<li>Recorridos flexibles.</li>
+
+<li>Inserciones eficientes.</li>
+
+<li>No requieren memoria contigua.</li>
+
+<li>Permiten navegación bidireccional.</li>
+
+</ul>
+
+<h3>Casos de Uso</h3>
+
+<p>
+Playlists musicales,
+sistemas operativos,
+historiales de navegación,
+turnos rotativos
+y aplicaciones multimedia.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+2. Ejemplos Prácticos Solucionados
+</h2>
+
+<h3>Ejemplo 1: Nodo doble</h3>
+
+<pre>
+class Nodo{
+
+    int dato;
+
+    Nodo anterior;
+    Nodo siguiente;
+}
+</pre>
+
+<p>
+Nodo con referencias dobles.
+</p>
+
+<hr>
+
+<h3>Ejemplo 2: Crear nodos</h3>
+
+<pre>
+Nodo n1 = new Nodo();
+Nodo n2 = new Nodo();
+</pre>
+
+<p>
+Creación básica de nodos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 3: Enlazar nodos</h3>
+
+<pre>
+n1.siguiente = n2;
+n2.anterior = n1;
+</pre>
+
+<p>
+Conexión entre nodos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 4: Lista circular</h3>
+
+<pre>
+n2.siguiente = n1;
+</pre>
+
+<p>
+El último nodo apunta al primero.
+</p>
+
+<hr>
+
+<h3>Ejemplo 5: Recorrido</h3>
+
+<pre>
+Nodo actual = n1;
+
+while(actual != null){
+
+    System.out.println(actual.dato);
+
+    actual = actual.siguiente;
+}
+</pre>
+
+<p>
+Recorrido secuencial.
+</p>
+
+<hr>
+
+<h3>Ejemplo 6: Insertar nodo</h3>
+
+<pre>
+Nodo nuevo = new Nodo();
+
+nuevo.siguiente = n1;
+</pre>
+
+<p>
+Inserción al inicio.
+</p>
+
+<hr>
+
+<h3>Ejemplo 7: Eliminar nodo</h3>
+
+<pre>
+n1.siguiente = n2.siguiente;
+</pre>
+
+<p>
+Eliminación simple.
+</p>
+
+<hr>
+
+<h3>Ejemplo 8: Mostrar anterior</h3>
+
+<pre>
+System.out.println(
+n2.anterior.dato
+);
+</pre>
+
+<p>
+Acceso bidireccional.
+</p>
+
+<hr>
+
+<h3>Ejemplo 9: Contar nodos</h3>
+
+<pre>
+int contador = 0;
+</pre>
+
+<p>
+Inicialización para conteo.
+</p>
+
+<hr>
+
+<h3>Ejemplo 10: Turnos rotativos</h3>
+
+<pre>
+actual = actual.siguiente;
+</pre>
+
+<p>
+Movimiento circular entre nodos.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+3. Retos Técnicos Propuestos
+</h2>
+
+<h3>Reto 1</h3>
+
+<p>
+Crear una lista doble
+con nombres de estudiantes.
+</p>
+
+<hr>
+
+<h3>Reto 2</h3>
+
+<p>
+Eliminar nodos repetidos.
+</p>
+
+<hr>
+
+<h3>Reto 3</h3>
+
+<p>
+Contar la cantidad de nodos.
+</p>
+
+<hr>
+
+<h3>Reto 4</h3>
+
+<p>
+Buscar un número específico.
+</p>
+
+<hr>
+
+<h3>Reto 5</h3>
+
+<p>
+Mostrar recorrido inverso.
+</p>
+
+<hr>
+
+</section>
+
+<section>
+
+<h2>
+4. Material de Soporte Audiovisual
+</h2>
+
+<p>
+Haz clic para visualizar
+la explicación detallada
+sobre listas dobles y circulares.
+</p>
+
+<a href="#">
+Ver Video Explicativo
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Proyecto Final — Estructura de Datos
+</p>
+
+</footer>
+
+</body>
+</html>
+```

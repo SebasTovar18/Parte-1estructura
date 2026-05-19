@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Listas Enlazadas Simples</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Tema 03: Listas Enlazadas Simples
+</h1>
+
+<p>
+Estructuras de Datos Dinámicas Lineales
+</p>
+
+</header>
+
+<nav>
+
+<a href="../index.html">
+← Volver al Índice General
+</a>
+
+</nav>
+
+<main>
+
+<section>
+
+<h2>
+1. Documentación Científica
+</h2>
+
+<h3>Definición</h3>
+
+<p>
+Una Lista Enlazada Simple es una estructura de datos
+dinámica compuesta por nodos independientes.
+Cada nodo almacena información y una referencia
+o enlace hacia el siguiente nodo de la secuencia.
+</p>
+
+<h3>Utilidad</h3>
+
+<p>
+Permite almacenar datos de manera dinámica,
+facilitando inserciones y eliminaciones eficientes
+sin necesidad de reorganizar espacios completos
+en memoria.
+</p>
+
+<h3>Características Clave</h3>
+
+<ul>
+
+<li>
+Estructura dinámica: el tamaño puede crecer o disminuir durante la ejecución.
+</li>
+
+<li>
+Cada nodo contiene dato y referencia al siguiente nodo.
+</li>
+
+<li>
+No requiere memoria contigua.
+</li>
+
+<li>
+El recorrido es secuencial y unidireccional.
+</li>
+
+<li>
+Permite inserciones y eliminaciones eficientes.
+</li>
+
+</ul>
+
+<h3>Casos de Uso Reales</h3>
+
+<p>
+Historiales de navegación web,
+listas de reproducción musicales,
+gestión dinámica de procesos del sistema operativo
+y estructuras internas de compiladores.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+2. Ejemplos Prácticos Solucionados
+</h2>
+
+<h3>
+Ejemplo 1: Creación básica de nodos enlazados
+</h3>
+
+<p>
+El siguiente ejemplo en Java muestra cómo crear
+una estructura básica de nodos conectados manualmente.
+</p>
+
+<pre>
+
+class Nodo {
+
+    int dato;
+    Nodo siguiente;
+
+    Nodo(int dato) {
+        this.dato = dato;
+        this.siguiente = null;
+    }
+}
+
+public class ListaSimple {
+
+    public static void main(String[] args) {
+
+        Nodo nodo1 = new Nodo(10);
+        Nodo nodo2 = new Nodo(20);
+        Nodo nodo3 = new Nodo(30);
+
+        nodo1.siguiente = nodo2;
+        nodo2.siguiente = nodo3;
+
+        System.out.println(nodo1.dato);
+        System.out.println(nodo1.siguiente.dato);
+        System.out.println(nodo2.siguiente.dato);
+    }
+}
+
+</pre>
+
+<h3>
+Ejemplo 2: Recorrido secuencial de una lista enlazada
+</h3>
+
+<p>
+Este ejemplo muestra cómo recorrer cada nodo
+hasta llegar al final de la lista.
+</p>
+
+<pre>
+
+Nodo actual = nodo1;
+
+while(actual != null){
+
+    System.out.println(actual.dato);
+
+    actual = actual.siguiente;
+}
+
+</pre>
+
+</section>
+
+<section>
+
+<h2>
+3. Retos Técnicos Propuestos (Sin Solución)
+</h2>
+
+<h3>
+Reto Técnico 1
+</h3>
+
+<p>
+Desarrollar un programa que permita insertar
+10 nodos enteros dentro de una lista enlazada simple
+y posteriormente eliminar únicamente los nodos
+que contengan valores pares.
+</p>
+
+<h3>
+Reto Técnico 2
+</h3>
+
+<p>
+Diseñar una lista enlazada simple capaz de almacenar
+nombres de estudiantes y recorrer la estructura
+mostrando únicamente aquellos nombres
+que comiencen con la letra “A”.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+4. Material de Soporte Audiovisual
+</h2>
+
+<p>
+Haz clic en el botón inferior para visualizar
+la explicación en video sobre el funcionamiento
+interno de las listas enlazadas simples.
+</p>
+
+<a href="#">
+Ver Video Explicativo
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Proyecto Final — Estructura de Datos
+</p>
+
+</footer>
+
+</body>
+</html>

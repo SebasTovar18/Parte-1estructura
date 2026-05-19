@@ -1,0 +1,352 @@
+```html id="v5u1x8"
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Pilas - Stack</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Tema 05: Pilas — Stack
+</h1>
+
+<p>
+Estructuras de Datos Lineales LIFO
+</p>
+
+</header>
+
+<nav>
+
+<a href="../index.html">
+← Volver al Índice General
+</a>
+
+</nav>
+
+<main>
+
+<section>
+
+<h2>
+1. Documentación Científica
+</h2>
+
+<h3>Definición</h3>
+
+<p>
+Una pila o Stack es una estructura
+de datos lineal que sigue el principio
+LIFO (Last In, First Out),
+lo que significa que el último elemento
+en entrar será el primero en salir.
+</p>
+
+<h3>Utilidad</h3>
+
+<p>
+Las pilas permiten controlar procesos
+temporales y operaciones secuenciales
+como navegación web,
+deshacer acciones
+y llamadas recursivas.
+</p>
+
+<h3>Características Clave</h3>
+
+<ul>
+
+<li>Funcionamiento LIFO.</li>
+
+<li>Inserción mediante Push.</li>
+
+<li>Eliminación mediante Pop.</li>
+
+<li>Consulta superior con Peek.</li>
+
+<li>Estructura dinámica o estática.</li>
+
+</ul>
+
+<h3>Casos de Uso</h3>
+
+<p>
+Historial del navegador,
+función deshacer,
+evaluación de expresiones matemáticas,
+compiladores
+y llamadas de funciones.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+2. Ejemplos Prácticos Solucionados
+</h2>
+
+<h3>Ejemplo 1: Crear Stack</h3>
+
+<pre>
+Stack<Integer> pila =
+new Stack<>();
+</pre>
+
+<p>
+Creación básica de pila.
+</p>
+
+<hr>
+
+<h3>Ejemplo 2: Push</h3>
+
+<pre>
+pila.push(10);
+</pre>
+
+<p>
+Inserta un elemento.
+</p>
+
+<hr>
+
+<h3>Ejemplo 3: Insertar varios</h3>
+
+<pre>
+pila.push(20);
+pila.push(30);
+</pre>
+
+<p>
+Agregar múltiples datos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 4: Mostrar pila</h3>
+
+<pre>
+System.out.println(pila);
+</pre>
+
+<p>
+Visualización de datos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 5: Pop</h3>
+
+<pre>
+pila.pop();
+</pre>
+
+<p>
+Elimina el último elemento.
+</p>
+
+<hr>
+
+<h3>Ejemplo 6: Peek</h3>
+
+<pre>
+System.out.println(
+pila.peek()
+);
+</pre>
+
+<p>
+Consulta elemento superior.
+</p>
+
+<hr>
+
+<h3>Ejemplo 7: Empty</h3>
+
+<pre>
+pila.empty();
+</pre>
+
+<p>
+Verifica si está vacía.
+</p>
+
+<hr>
+
+<h3>Ejemplo 8: Size</h3>
+
+<pre>
+pila.size();
+</pre>
+
+<p>
+Cantidad de elementos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 9: Buscar elemento</h3>
+
+<pre>
+pila.search(20);
+</pre>
+
+<p>
+Busca posición del dato.
+</p>
+
+<hr>
+
+<h3>Ejemplo 10: Limpiar pila</h3>
+
+<pre>
+pila.clear();
+</pre>
+
+<p>
+Elimina todos los elementos.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+3. Retos Técnicos Propuestos
+</h2>
+
+<h3>Reto 1</h3>
+
+<p>
+Crear una pila
+con 5 números enteros.
+</p>
+
+<hr>
+
+<h3>Reto 2</h3>
+
+<p>
+Mostrar el último elemento
+de la pila.
+</p>
+
+<hr>
+
+<h3>Reto 3</h3>
+
+<p>
+Eliminar un elemento
+de la pila.
+</p>
+
+<hr>
+
+<h3>Reto 4</h3>
+
+<p>
+Verificar si la pila
+está vacía.
+</p>
+
+<hr>
+
+<h3>Reto 5</h3>
+
+<p>
+Insertar nombres
+en una pila.
+</p>
+
+<hr>
+
+<h3>Reto 6</h3>
+
+<p>
+Contar los elementos
+de una pila.
+</p>
+
+<hr>
+
+<h3>Reto 7</h3>
+
+<p>
+Buscar un número
+dentro de la pila.
+</p>
+
+<hr>
+
+<h3>Reto 8</h3>
+
+<p>
+Eliminar todos los elementos
+de la pila.
+</p>
+
+<hr>
+
+<h3>Reto 9</h3>
+
+<p>
+Crear una pila
+de cadenas de texto.
+</p>
+
+<hr>
+
+<h3>Reto 10</h3>
+
+<p>
+Mostrar todos los elementos
+de la pila.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+4. Material de Soporte Audiovisual
+</h2>
+
+<p>
+Haz clic para visualizar
+la explicación detallada
+sobre pilas y funcionamiento LIFO.
+</p>
+
+<a href="#">
+Ver Video Explicativo
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Proyecto Final — Estructura de Datos
+</p>
+
+</footer>
+
+</body>
+</html>
+```

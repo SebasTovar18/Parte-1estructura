@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Colas - Queue</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Tema 06: Colas — Queue
+</h1>
+
+<p>
+Estructuras de Datos Lineales FIFO
+</p>
+
+</header>
+
+<nav>
+
+<a href="../index.html">
+← Volver al Índice General
+</a>
+
+</nav>
+
+<main>
+
+<section>
+
+<h2>
+1. Documentación Científica
+</h2>
+
+<h3>Definición</h3>
+
+<p>
+Una cola o Queue es una estructura
+de datos lineal que sigue el principio
+FIFO (First In, First Out),
+lo que significa que el primer elemento
+en entrar será el primero en salir.
+</p>
+
+<h3>Utilidad</h3>
+
+<p>
+Las colas permiten organizar procesos
+en orden secuencial de llegada,
+siendo utilizadas en sistemas
+de turnos, impresión y procesamiento.
+</p>
+
+<h3>Características Clave</h3>
+
+<ul>
+
+<li>Funcionamiento FIFO.</li>
+
+<li>Inserción mediante Enqueue.</li>
+
+<li>Eliminación mediante Dequeue.</li>
+
+<li>Acceso ordenado.</li>
+
+<li>Procesamiento secuencial.</li>
+
+</ul>
+
+<h3>Casos de Uso</h3>
+
+<p>
+Sistemas de turnos,
+colas de impresión,
+procesamiento de tareas,
+simulación bancaria
+y atención al cliente.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+2. Ejemplos Prácticos Solucionados
+</h2>
+
+<h3>Ejemplo 1: Crear cola</h3>
+
+<pre>
+Queue<Integer> cola =
+new LinkedList<>();
+</pre>
+
+<p>
+Creación básica de cola.
+</p>
+
+<hr>
+
+<h3>Ejemplo 2: Enqueue</h3>
+
+<pre>
+cola.add(10);
+</pre>
+
+<p>
+Agregar elemento.
+</p>
+
+<hr>
+
+<h3>Ejemplo 3: Insertar varios</h3>
+
+<pre>
+cola.add(20);
+cola.add(30);
+</pre>
+
+<p>
+Inserción múltiple.
+</p>
+
+<hr>
+
+<h3>Ejemplo 4: Mostrar cola</h3>
+
+<pre>
+System.out.println(cola);
+</pre>
+
+<p>
+Visualización de elementos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 5: Dequeue</h3>
+
+<pre>
+cola.poll();
+</pre>
+
+<p>
+Eliminar primer elemento.
+</p>
+
+<hr>
+
+<h3>Ejemplo 6: Peek</h3>
+
+<pre>
+cola.peek();
+</pre>
+
+<p>
+Consultar primer dato.
+</p>
+
+<hr>
+
+<h3>Ejemplo 7: Verificar vacía</h3>
+
+<pre>
+cola.isEmpty();
+</pre>
+
+<p>
+Comprobación de cola vacía.
+</p>
+
+<hr>
+
+<h3>Ejemplo 8: Tamaño</h3>
+
+<pre>
+cola.size();
+</pre>
+
+<p>
+Cantidad de elementos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 9: Limpiar cola</h3>
+
+<pre>
+cola.clear();
+</pre>
+
+<p>
+Eliminar todos los datos.
+</p>
+
+<hr>
+
+<h3>Ejemplo 10: Cola de nombres</h3>
+
+<pre>
+Queue<String> nombres =
+new LinkedList<>();
+</pre>
+
+<p>
+Cola de cadenas de texto.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+3. Retos Técnicos Propuestos
+</h2>
+
+<h3>Reto 1</h3>
+
+<p>
+Crear una cola
+con 5 números enteros.
+</p>
+
+<hr>
+
+<h3>Reto 2</h3>
+
+<p>
+Mostrar el primer elemento
+de la cola.
+</p>
+
+<hr>
+
+<h3>Reto 3</h3>
+
+<p>
+Eliminar un elemento
+de la cola.
+</p>
+
+<hr>
+
+<h3>Reto 4</h3>
+
+<p>
+Verificar si la cola
+está vacía.
+</p>
+
+<hr>
+
+<h3>Reto 5</h3>
+
+<p>
+Insertar nombres
+en una cola.
+</p>
+
+<hr>
+
+</section>
+
+<section>
+
+<h2>
+4. Material de Soporte Audiovisual
+</h2>
+
+<p>
+Haz clic para visualizar
+la explicación detallada
+sobre colas y funcionamiento FIFO.
+</p>
+
+<a href="#">
+Ver Video Explicativo
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Proyecto Final — Estructura de Datos
+</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Árboles Balanceados - AVL</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Tema 10: Árboles Balanceados — AVL
+</h1>
+
+<p>
+Estructuras de Datos Jerárquicas Balanceadas
+</p>
+
+</header>
+
+<nav>
+
+<a href="../index.html">
+← Volver al Índice General
+</a>
+
+</nav>
+
+<main>
+
+<section>
+
+<h2>
+1. Documentación Científica
+</h2>
+
+<h3>Definición</h3>
+
+<p>
+Un árbol AVL es un árbol binario
+de búsqueda auto-balanceado,
+donde la diferencia de altura
+entre subárboles no puede ser mayor a 1.
+</p>
+
+<h3>Utilidad</h3>
+
+<p>
+Permite mantener búsquedas,
+inserciones y eliminaciones
+más eficientes,
+evitando que el árbol
+se desordene o desequilibre.
+</p>
+
+<h3>Características Clave</h3>
+
+<ul>
+
+<li>Árbol auto-balanceado.</li>
+
+<li>Búsquedas rápidas.</li>
+
+<li>Rotaciones automáticas.</li>
+
+<li>Estructura jerárquica.</li>
+
+<li>Optimización de rendimiento.</li>
+
+</ul>
+
+<h3>Casos de Uso</h3>
+
+<p>
+Bases de datos,
+motores de búsqueda,
+sistemas financieros,
+gestión de información
+y almacenamiento optimizado.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+2. Ejemplos Prácticos Solucionados
+</h2>
+
+<h3>Ejemplo 1: Crear nodo AVL</h3>
+
+<pre>
+class Nodo{
+
+    int dato;
+
+    Nodo izquierda;
+    Nodo derecha;
+}
+</pre>
+
+<p>
+Nodo básico AVL.
+</p>
+
+<hr>
+
+<h3>Ejemplo 2: Crear raíz</h3>
+
+<pre>
+Nodo raiz = new Nodo();
+
+raiz.dato = 50;
+</pre>
+
+<p>
+Creación del nodo principal.
+</p>
+
+<hr>
+
+<h3>Ejemplo 3: Insertar hijo izquierdo</h3>
+
+<pre>
+raiz.izquierda = new Nodo();
+
+raiz.izquierda.dato = 30;
+</pre>
+
+<p>
+Inserción izquierda.
+</p>
+
+<hr>
+
+<h3>Ejemplo 4: Insertar hijo derecho</h3>
+
+<pre>
+raiz.derecha = new Nodo();
+
+raiz.derecha.dato = 80;
+</pre>
+
+<p>
+Inserción derecha.
+</p>
+
+<hr>
+
+<h3>Ejemplo 5: Mostrar raíz</h3>
+
+<pre>
+System.out.println(
+raiz.dato
+);
+</pre>
+
+<p>
+Visualización principal.
+</p>
+
+<hr>
+
+<h3>Ejemplo 6: Mostrar hijo izquierdo</h3>
+
+<pre>
+System.out.println(
+raiz.izquierda.dato
+);
+</pre>
+
+<p>
+Acceso izquierdo.
+</p>
+
+<hr>
+
+<h3>Ejemplo 7: Mostrar hijo derecho</h3>
+
+<pre>
+System.out.println(
+raiz.derecha.dato
+);
+</pre>
+
+<p>
+Acceso derecho.
+</p>
+
+<hr>
+
+<h3>Ejemplo 8: Verificar balance</h3>
+
+<pre>
+int balance = 1;
+</pre>
+
+<p>
+Factor de balance simple.
+</p>
+
+<hr>
+
+<h3>Ejemplo 9: Crear nuevo nodo</h3>
+
+<pre>
+Nodo nuevo = new Nodo();
+</pre>
+
+<p>
+Creación de nodo AVL.
+</p>
+
+<hr>
+
+<h3>Ejemplo 10: Rotación simple</h3>
+
+<pre>
+System.out.println(
+"Rotación AVL"
+);
+</pre>
+
+<p>
+Representación básica de rotación.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+3. Retos Técnicos Propuestos
+</h2>
+
+<h3>Reto 1</h3>
+
+<p>
+Crear un árbol AVL
+con 5 números.
+</p>
+
+<hr>
+
+<h3>Reto 2</h3>
+
+<p>
+Insertar un nodo
+a la izquierda.
+</p>
+
+<hr>
+
+<h3>Reto 3</h3>
+
+<p>
+Insertar un nodo
+a la derecha.
+</p>
+
+<hr>
+
+<h3>Reto 4</h3>
+
+<p>
+Mostrar el nodo raíz.
+</p>
+
+<hr>
+
+<h3>Reto 5</h3>
+
+<p>
+Contar los nodos
+del árbol.
+</p>
+
+</section>
+
+<section>
+
+<h2>
+4. Material de Soporte Audiovisual
+</h2>
+
+<p>
+Haz clic para visualizar
+la explicación detallada
+sobre árboles AVL
+y balanceo automático.
+</p>
+
+<a href="#">
+Ver Video Explicativo
+</a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Proyecto Final — Estructura de Datos
+</p>
+
+</footer>
+
+</body>
+</html>
